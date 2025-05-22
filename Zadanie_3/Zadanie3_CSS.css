@@ -1,0 +1,206 @@
+/* Ogólne stylizowanie elementów */
+FootballPlayers {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 20px;
+    padding: 20px;
+    background-color: #2e003e;
+    color: #ffffff;
+    display: block;
+    text-align: center;
+}
+
+DocumentMetadata {
+    display: block;
+    padding: 10px;
+    background-color: #3e1f47;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+Author, title, LastModified {
+    display: block;
+    margin: 5px;
+    color: #d4bff9;
+}
+
+Author {
+    color: #ccc900;
+}
+
+title {
+    font-size: 300%;
+    color: aqua;
+    font-style: italic;
+}
+
+LastModified {
+    font-size: 60%
+}
+
+LastModified::before {
+    content: "Ostatnio zmodyfikowano: ";
+}
+
+/* Stylizacja piłkarzy */
+Players {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dwa elementy w rzędzie, 1fr to równy podział */
+    gap: 20px; /* Odstępy między elementami */
+}
+
+Players > Player {
+    display: block;
+    padding: 10px;
+    margin: 10px;
+    background-color: #3e1f47;
+}
+
+Player:hover {
+    background-color:#b3a3d1 ;
+    color: #3e1f47;
+}
+
+Player > Name {
+    font-weight: bold;
+    color: #ccc900;
+}
+
+Player:hover > Name {
+    font-weight: bold;
+    color:#2e003e;
+}
+
+Player > MarketValue {
+    color: aqua;
+}
+
+Player:hover > MarketValue {
+    color: #2e003e;
+}
+
+Player > Age::after {
+    content: " lata";
+}
+
+Player > Position, Nationality, Age, MarketValue {
+    display: block;
+    color: #b3a3d1;
+    margin: 5px 0;
+}
+
+Player:hover > Position, Player:hover > Nationality, Player:hover > Age, Player:hover > MarketValue {
+    display: block;
+    color:#2e003e;
+    margin: 5px 0;
+}
+
+/* Stylizacja klubów */
+Clubs {
+    display: grid;
+}
+
+Clubs > Club {
+    display: block;
+    padding: 10px;
+    margin: 10px;
+    background-color: #d4bff9;
+}
+
+Clubs > Club:hover {
+    color: #b3a3d1 ;
+    background-color: #ae02dd;
+}
+
+Club > Name, Club > City, Club > Stadium {
+    padding: 10px;
+    display: block;
+    color: #2e003e;
+}
+
+Club:hover > Name, Club:hover  > City, Club:hover  > Stadium {
+    color: #b3a3d1 ;
+    background-color: #ae02dd;
+}
+
+Club > Name {
+    font-size: 150%;
+}
+
+Club:hover > Name {
+    color: #ccc900;
+}
+
+Club:hover > Stadium {
+    color: aqua;
+}
+
+Club > City::after {
+    content: " (miasto)";
+}
+
+/* Stylizacja trenerów */
+Coaches {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dwa elementy w rzędzie, 1fr to równy podział */
+    gap: 20px; /* Odstępy między elementami */
+}
+
+Coaches > Coach {
+    display: block;
+    padding: 20px;
+    margin: 10px;
+    background-color: #190030;
+    color:#b3a3d1;
+}
+
+Coaches > Coach:hover {
+    background-color: aqua;
+    color:#190030;
+}
+
+Coach > Name {
+    display: block;
+}
+
+Coach:hover > Name {
+    color: #9c9a00;
+    font-style: oblique;
+}
+
+Coach > ClubRef {
+    display: block;
+    padding: 10px;
+}
+
+Coach > ExperienceYears {
+    display: block;
+}
+
+Coach:hover > ExperienceYears {
+    color: #ae02dd;
+}
+
+Coach > ExperienceYears::after {
+    content: " (lata doświadczenia)";
+    font-style: italic;
+}
+
+ol {
+    padding-left: 20px;
+    list-style-type: circle ;
+    list-style-position: inside
+}
+
+li {
+    display: list-item; /* Upewnij się, że elementy listy mają właściwy styl */
+    margin: 5px;
+}
+
+li::marker {
+    color: #ffcc00;
+    font-size: 20px;
+}
+
+Coach:hover li::marker{
+    color: #ae02dd;
+}

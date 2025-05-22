@@ -1,0 +1,35 @@
+<!ENTITY ClubName "Manchester City">
+<!ENTITY ClubCity "Manchester">
+<!ENTITY % person-elements "Name, Nationality">
+
+<!ELEMENT FootballPlayers (DocumentMetadata, Players, Clubs, Coaches)>
+
+<!ELEMENT DocumentMetadata (Author, LastModified)>
+<!ELEMENT Author (#PCDATA)>
+<!ELEMENT LastModified (#PCDATA)>
+
+<!ELEMENT Players (Player+)>
+<!ELEMENT Player (%person-elements;, Position, Age?, Club, MarketValue)>
+<!ATTLIST Player id ID #REQUIRED>
+
+<!ELEMENT Name (#PCDATA)>
+<!ELEMENT Position (#PCDATA)>
+<!ELEMENT Nationality (#PCDATA)>
+<!ELEMENT Age (#PCDATA)>
+<!ELEMENT Club EMPTY>
+<!ATTLIST Club ref IDREF #REQUIRED>
+<!ELEMENT MarketValue (#PCDATA)>
+
+<!ELEMENT Clubs (Club+)>
+<!ELEMENT Club (Name, City, Stadium)>
+<!ATTLIST Club id ID #REQUIRED>
+<!ELEMENT Name (#PCDATA)>
+<!ELEMENT City (#PCDATA)>
+<!ELEMENT Stadium (#PCDATA)>
+
+<!ELEMENT Coaches (Coach+)>
+<!ELEMENT Coach (%person-elements;, ClubRef, ExperienceYears)>
+<!ATTLIST Coach id ID #REQUIRED>
+<!ELEMENT ClubRef (#PCDATA)>
+<!ATTLIST ClubRef ref IDREF #REQUIRED>
+<!ELEMENT ExperienceYears (#PCDATA)>
