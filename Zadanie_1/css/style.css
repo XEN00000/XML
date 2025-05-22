@@ -1,0 +1,101 @@
+body {
+	font-family: Arial, sans-serif;
+	background-color: #c21515;
+	color: #333;
+	line-height: 1.6;
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	background-image: url("img/anfield.jpg");
+	background-size: cover;
+	background-position: center;
+	color: #fff;
+	padding: 100px 20px;
+	text-align: center;
+}
+
+header h1 {
+	font-size: 3em;
+	text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+header p {
+	font-size: 1.5em;
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+.content-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 20px;
+	max-width: 1200px;
+	margin: 40px auto;
+	padding: 0 20px;
+}
+
+.card {
+	background-color: #fff;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	border-radius: 10px;
+	overflow: hidden;
+	width: 100%;
+	max-width: 500px;
+	margin: 0 auto;
+}
+
+.card img {
+	width: 100%;
+	height: auto;
+}
+
+.card-content {
+	padding: 20px;
+}
+
+.card-content h2 {
+	color: #c8102e;
+	margin-top: 0;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-top: 15px;
+}
+
+table th,
+table td {
+	border: 1px solid #ddd;
+	padding: 10px;
+	text-align: center;
+}
+
+table th {
+	background-color: #c8102e;
+	color: #fff;
+}
+
+footer {
+	background-color: #222;
+	color: #fff;
+	text-align: center;
+	padding: 20px;
+	margin-top: 40px;
+}
+
+.grid-container {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 20px;
+	max-width: 1200px;
+	margin: 20px auto;
+}
+
+.grid-item {
+	background-color: #fff;
+	padding: 20px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
