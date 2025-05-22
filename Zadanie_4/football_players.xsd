@@ -1,0 +1,138 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+    <!-- Root element -->
+    <xs:element name="FootballPlayers">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="DocumentMetadata" type="DocumentMetadataType"/>
+                <xs:element name="Players" type="PlayersType"/>
+                <xs:element name="Clubs" type="ClubsType"/>
+                <xs:element name="Coaches" type="CoachesType"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- Document Metadata -->
+    <xs:complexType name="DocumentMetadataType">
+        <xs:sequence>
+            <xs:element name="Author" type="xs:string"/>
+            <xs:element name="LastModified" type="xs:date"/>
+            <xs:element name="Title" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <!-- Players Section -->
+    <xs:complexType name="PlayersType">
+        <xs:sequence>
+            <xs:element name="Player" type="PlayerType" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="PlayerType">
+        <xs:sequence>
+            <xs:element name="PlayerName">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:minLength value="3"/>
+                        <xs:maxLength value="50"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="Position">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:enumeration value="Striker"/>
+                        <xs:enumeration value="RightWinger"/>
+                        <xs:enumeration value="LeftWinger"/>
+                        <xs:enumeration value="AttackingMidfielder"/>
+                        <xs:enumeration value="DefensiveMidfielder"/>
+                        <xs:enumeration value="CenterBack"/>
+                        <xs:enumeration value="LeftBack"/>
+                        <xs:enumeration value="RightBack"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="Nationality">
+                <xs:complexType>
+                    <xs:choice>
+                        <xs:element name="Europe" type="xs:string"/>
+                        <xs:element name="SouthAmerica" type="xs:string"/>
+                        <xs:element name="NorthAmerica" type="xs:string"/>
+                        <xs:element name="Asia" type="xs:string"/>
+                        <xs:element name="Africa" type="xs:string"/>
+                        <xs:element name="Australia" type="xs:string"/>
+                    </xs:choice>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="Age">
+                <xs:simpleType>
+                    <xs:restriction base="xs:positiveInteger">
+                        <xs:minInclusive value="16"/>
+                        <xs:maxInclusive value="50"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="GA" type="xs:decimal" minOccurs="0"/>
+            <xs:element name="InClubFrom" type="xs:date"/>
+            <xs:element name="PlayerClubRef" type="PlayerClubRefType"/>
+            <xs:element name="MarketValue" type="CurrencyType"/>
+        </xs:sequence>
+        <xs:attribute name="id" type="xs:ID" use="required"/>
+    </xs:complexType>
+
+    <xs:simpleType name="CurrencyType">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="€[0-9]+(\.[0-9]{2})?m"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:complexType name="PlayerClubRefType">
+        <xs:attribute name="ref" type="xs:IDREF" use="required"/>
+    </xs:complexType>
+
+    <!-- Clubs Section -->
+    <xs:complexType name="ClubsType">
+        <xs:sequence>
+            <xs:element name="Club" type="ClubType" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="ClubType">
+        <xs:sequence>
+            <xs:element name="ClubName" type="xs:string"/>
+            <xs:element name="City" type="xs:string"/>
+            <xs:element name="Stadium" type="xs:string"/>
+        </xs:sequence>
+        <xs:attribute name="id" type="xs:ID" use="required"/>
+    </xs:complexType>
+
+    <!-- Coaches Section -->
+    <xs:complexType name="CoachesType">
+        <xs:sequence>
+            <xs:element name="Coach" type="CoachType" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="CoachType">
+        <xs:sequence>
+            <xs:element name="CoachName" type="xs:string"/>
+            <xs:element name="ClubRef" type="xs:string"/>
+            <xs:element name="ExperienceYears" type="xs:positiveInteger"/>
+            <xs:element name="Achievements" type="AchievementsType"/>
+        </xs:sequence>
+        <xs:attribute name="id" type="xs:ID" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="AchievementsType">
+        <xs:sequence>
+            <xs:element name="ol" type="OrderedListType"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="OrderedListType">
+        <xs:sequence>
+            <xs:element name="li" type="xs:string" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+</xs:schema>
