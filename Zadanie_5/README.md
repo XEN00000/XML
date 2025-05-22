@@ -1,57 +1,32 @@
 
-# Zadanie: Transformacja z użyciem XSLT
+# Podsumowanie wykonanych zadań
 
-Dla Twojego dokumentu XML stwórz **cztery** szablony przekształceń XSLT.
+## 🔧 Zadania z zakresu XML i przekształceń danych
 
-- **Pierwsze przekształcenie** będzie miało na celu stworzenie **pomocniczego dokumentu** w formacie XML, będącego raportem uzyskanym na podstawie dokumentu źródłowego – **format wyjściowy: XML**.
-- **Drugie przekształcenie** będzie miało na celu uzyskanie z dokumentu pomocniczego dokumentu do prezentacji **w formacie XHTML**, przy zastosowaniu dodatkowych wymogów podnoszących funkcjonalność dokumentu – **format wyjściowy: plik HTML**.
-- **Trzecie przekształcenie** będzie miało na celu uzyskanie z dokumentu pomocniczego dokumentu **w formacie tekstowym** – **format wyjściowy: plik TXT**.
-- **Czwarte przekształcenie** będzie miało na celu uzyskanie z dokumentu pomocniczego dokumentu (wykresu) **w formacie SVG** jako inny sposób prezentacji danych – **format wyjściowy: plik SVG**.
+1. **Tworzenie dokumentu XML z rozbudowaną strukturą**  
+   Opracowano dokument XML zawierający zróżnicowane typy danych, połączenia między elementami, a także dane dodatkowe (autor, data modyfikacji).  
 
----
+2. **Walidacja struktury z użyciem DTD i XML Schema (XSD)**  
+   Sporządzono pliki DTD i XSD opisujące strukturę danych, uwzględniając przestrzenie nazw, typy proste i złożone, ograniczenia i powiązania między elementami (ID/IDREF, key/keyref).
 
-## 📄 Dokument pomocniczy
+3. **Transformacje XSLT**  
+   Przygotowano cztery transformacje:
+   - z XML do pomocniczego raportu XML,
+   - z XML do dokumentu XHTML zgodnego z WCAG i XHTML 1.0 Strict,
+   - z XML do tekstowego raportu tabelarycznego (TXT),
+   - z XML do wykresu SVG (w tym animacje).
 
-Dokument ma być **raportem**, zestawieniem, podsumowaniem lub wybraniem dla klienta. Powinien zawierać znaczniki XML potrzebne do łatwego uzyskania dokumentu wyjściowego przeznaczonego do prezentacji.
+## 🌐 Zadania z zakresu tworzenia stron i grafiki
 
-**To jest dobry moment, żeby połączyć się za pomocą elementów powiązanych atrybutami ID i IDREF(S) / key i keyref.**
+4. **Strona internetowa o wymarzonym miejscu podróży**  
+   Stworzono atrakcyjną wizualnie stronę HTML z opisem, grafikami, filmami, tabelą kosztów, listą rzeczy do zabrania oraz faviconą. Strona spełnia wytyczne dostępności WCAG.
 
----
+5. **Gra karciana w SVG i JavaScript**  
+   Zaprojektowano grę, w której grafika została wykonana w SVG, a interakcja obsługiwana jest za pomocą JavaScriptu.
 
-## 📊 Dokument XHTML
-
-Elementami, na które trzeba będzie zwracać szczególną uwagę, to walidacja dokumentu jako **XHTML 1.0 Strict**, np. w:
-
-👉 [Usłudze walidacji W3C](https://validator.w3.org/)
-
-![Walidator W3C](2282dd47-33e9-4975-bc6f-9f62d20935fa.png)
-
----
-
-## 📃 Dokument tekstowy
-
-Stwórz **regularne kolumny tekstu** z użyciem dodatkowych spacji – użyj funkcji XPath `concat` i `substring`.
-
-Przykład formatu tekstowego:
-
-```
-+------------+-------------+------------------+
-| Nazwa      | Ocena       | Populacja        |
-+------------+-------------+------------------+
-| Buzek      | 1           | 34 tysięcy       |
-| C4         | 1           | 34 tysięcy       |
-| Mirosław   | 7           | 134.5 tysięcy    |
-| C5         | 7           | 134.5 tysięcy    |
-| CC         | 4           | 566 tysięcy      |
-| Picasso    | 6           | 234.1 tysięcy    |
-| Xsara      | 7           | 2344 tysięcy     |
-+------------+-------------+------------------+
-```
+6. **Rysunek świąteczny (Halloween lub inne święto)**  
+   Wykonano obrazek wektorowy z użyciem SVG, z gradientem i animacją, tematycznie powiązany ze świętem (np. Halloween).
 
 ---
 
-## 📈 Dokument SVG
-
-Stwórz transformację pomocniczego dokumentu XML do postaci obrazu **SVG (Scalable Vector Graphics)**. Ma on stanowić inną formę prezentacji danych z raportu w postaci **wykresów**. Dołącz transformację wybranych elementów lub parametrów dokumentu XML, aby powstały proste animacje.
-
-Postaraj się uzyskać plik w wyjściowym formacie, a nie tylko oglądać efekt końcowy transformacji w oknie przeglądarki.
+To zestawienie pokazuje, że zadania obejmowały szeroki zakres technologii webowych: od modelowania danych XML, przez transformacje i walidację, po tworzenie stron internetowych i grafiki interaktywnej.
