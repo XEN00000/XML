@@ -32,7 +32,6 @@ Elementami, na które trzeba będzie zwracać szczególną uwagę, to walidacja 
 Stwórz **regularne kolumny tekstu** z użyciem dodatkowych spacji – użyj funkcji XPath `concat` i `substring`.
 
 Przykład formatu tekstowego:
-+----------+-------+-----------------+
 | Nazwa    | Ocena | Populacja       |
 |----------|:-----:|-----------------|
 | Buzek    |   1   | 34 tysięcy      |
@@ -42,7 +41,6 @@ Przykład formatu tekstowego:
 | CC       |   4   | 566 tysięcy     |
 | Picasso  |   6   | 234.1 tysięcy   |
 | Xsara    |   7   | 2344 tysięcy    |
-+----------+-------+-----------------+
 
 ---
 
