@@ -1,0 +1,287 @@
+html {
+    font-size: 120%;
+}
+
+body {
+    background-color: rgb(65, 65, 65);
+    font-family: 'Georgia', serif; /* Styl klasyczny */
+    text-align: center;
+    font-size: large;
+}
+
+#main-container {
+    display: flex; /* Ustawia układ na flexbox */
+    justify-content: space-between; /* Rozkłada elementy na szerokość */
+    align-items: flex-start; /* Wyrównuje elementy do góry */
+    gap: 20px; /* Odstęp między elementami */
+    margin: 20px;
+}
+
+#game-container {
+    flex-grow: 1; /* Zielony blok zajmuje pozostałą przestrzeń */
+    background-color: rgb(0, 71, 0);
+    color: white;
+    box-shadow: inset 0 0 5px #000000, 0 4px 8px rgba(0, 0, 0, 0.5);
+    border: 10px solid rgba(156, 49, 0, 0.712);
+    border-radius: 15px; /* Zaokrąglenie */
+    padding: 15px;
+    max-width: 80vw;
+    min-width: 400px;
+    min-height: 80vh;
+
+    display: flex; /* Dodaj flexbox */
+    flex-direction: column; /* Ustaw elementy w kolumnie */
+    justify-content: center; /* Wyśrodkowanie w pionie */
+    align-items: center; /* Wyśrodkowanie w poziomie */
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*----------------------------------Stylizacja info boxa-----------------------------*/
+/*-----------------------------------------------------------------------------------*/
+#info-box {
+    max-width: 15vw;
+    min-width: 200px;
+    flex-grow: 1; /* Zielony blok zajmuje pozostałą przestrzeń */
+}
+
+.info-content {
+    background-color: rgb(66, 40, 0);
+    color: yellow;
+    box-shadow: inset 0 0 5px #000000, 0 4px 8px rgba(0, 0, 0, 0.5);
+    border: 10px solid rgba(156, 49, 0, 0.712);
+    border-radius: 15px; /* Zaokrąglenie */
+    padding: 15px;
+    margin: 5px;
+}
+
+#player-wins {
+    color: green;
+}
+
+#dealer-wins {
+    color: red;
+}
+
+#player-money {
+    color: rgb(0, 90, 0);
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*---------------------------------Stylizacja game-start-----------------------------*/
+/*-----------------------------------------------------------------------------------*/
+#start-game-phase h1 {
+    font-size: 3rem; /* Duży rozmiar nagłówka */
+    color: gold; /* Kolor złoty dla klimatu kasyna */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Subtelny cień */
+    margin-bottom: 20px; /* Odstęp pod nagłówkiem */
+    font-family: 'Georgia', serif; /* Styl klasyczny */
+}
+
+#start-game-button {
+    background-color: green; /* Zielony kolor przycisku */
+    color: white; /* Biały kolor tekstu */
+    font-size: 1.5rem; /* Duży tekst */
+    font-weight: bold; /* Pogrubiony tekst */
+    padding: 15px 30px; /* Wewnętrzny odstęp */
+    border: 3px solid white; /* Białe obramowanie */
+    border-radius: 10px; /* Zaokrąglone krawędzie */
+    cursor: pointer; /* Wskaźnik kursora */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Dodanie cienia */
+    transition: transform 0.2s ease, background-color 0.3s ease; /* Animacja */
+}
+
+#start-game-button:hover {
+    background-color: darkgreen; /* Zmiana koloru przy najechaniu */
+    transform: scale(1.1); /* Powiększenie */
+}
+
+#start-game-button:active {
+    transform: scale(1); /* Powrót do normalnego rozmiaru przy kliknięciu */
+    background-color: limegreen; /* Jaśniejszy kolor przy kliknięciu */
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*-----------------------------Stylizacja betting-phase------------------------------*/
+/*-----------------------------------------------------------------------------------*/
+
+
+
+/*-----------------------------------------------------------------------------------*/
+/*-----------------------------Stylizacja przycisków od betów------------------------*/
+/*-----------------------------------------------------------------------------------*/
+/* Stylizacja dla przycisków-zetonów */
+#bet-controls {
+    display: flex; /* Włącz Flexbox */
+    justify-content: center; /* Wyśrodkowanie przycisków w poziomie */
+    align-items: flex-end; /* Ustawienie przycisków na dole */
+    height: 100%; /* Wysokość sekcji */
+    padding-bottom: 20px; /* Odstęp od dołu */
+    margin-top: auto; /* Ustawienie automatycznego odsunięcia od góry */
+    gap: 10px; /* Odstępy między przyciskami */
+}
+
+.menu-button {
+    width: 80px; /* Średnica żetonu */
+    height: 80px; /* Średnica żetonu */
+    background: radial-gradient(circle, #ffffff 30%, rgba(0, 110, 255, 0.945) 40%, currentColor 90%);
+    color: black;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 80px;
+    border-radius: 50%;
+    border: 5px solid black;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    position: relative;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.bet-button {
+    width: 80px; /* Średnica żetonu */
+    height: 80px; /* Średnica żetonu */
+    background: radial-gradient(circle, #ffffff 30%, rgba(0, 110, 255, 0.945) 40%, currentColor 90%);
+    color: black;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 80px;
+    border-radius: 50%;
+    border: 5px solid black;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    position: relative;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Efekt hover */
+.menu-button:hover {
+    transform: scale(1.1); /* Powiększenie przy najechaniu */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.7); /* Mocniejszy cień */
+}
+
+/* Efekt aktywny */
+.menu-button:active {
+    transform: scale(0.95); /* Kliknięcie zmniejsza rozmiar */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Mniejszy cień */
+}
+
+/* Indywidualne kolory dla każdego żetonu */
+#five {
+    background: radial-gradient(circle, #ffffff 30%, #00bfff 90%);
+}
+
+#ten {
+    background: radial-gradient(circle, #ffffff 30%, #ff8000 90%);
+}
+
+#twenty-five {
+    background: radial-gradient(circle, #ffffff 30%, #00ff00 90%);
+}
+
+#one-hundred {
+    background: radial-gradient(circle, #ffffff 30%, #ff0000 90%);
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*------------------------------------Stylizacja kart--------------------------------*/
+/*-----------------------------------------------------------------------------------*/
+
+.card img {
+    max-width: 10%; /* Dopasowanie obrazka do karty */
+    max-height: 10%; /* Dopasowanie obrazka do karty */
+    border-radius: 8px; /* Zaokrąglenie dla obrazka */
+}
+
+#player-play-buttons {
+    display: flex; /* Flexbox dla przycisków */
+    justify-content: center; /* Wyśrodkowanie w poziomie */
+    gap: 10px; /* Odstęp między przyciskami */
+    margin-top: 20px; /* Odstęp od góry */
+}
+
+#player-play-buttons button {
+    background-color: rgb(0, 71, 142); /* Kolor tła */
+    color: white; /* Kolor tekstu */
+    border: 2px solid white; /* Obramowanie */
+    border-radius: 10px; /* Zaokrąglone krawędzie */
+    padding: 10px 20px; /* Wewnętrzne odstępy */
+    font-size: 1rem; /* Rozmiar tekstu */
+    font-weight: bold; /* Pogrubienie tekstu */
+    cursor: pointer; /* Wskaźnik kursora */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* Efekt cienia */
+    transition: transform 0.2s, background-color 0.3s; /* Animacja */
+}
+
+#player-play-buttons button:hover {
+    background-color: rgb(0, 90, 180); /* Jaśniejszy kolor na hover */
+    transform: scale(1.1); /* Powiększenie */
+}
+
+#player-play-buttons button:active {
+    background-color: rgb(0, 50, 120); /* Ciemniejszy kolor na kliknięcie */
+    transform: scale(1); /* Powrót do normalnego rozmiaru */
+}
+
+#player-area h2 {
+    font-size: 1.8rem; /* Rozmiar nagłówka */
+    color: gold; /* Kolor tekstu */
+    margin-bottom: 10px; /* Odstęp pod nagłówkiem */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Subtelny cień */
+}
+
+#player-score {
+    font-size: 1.5rem; /* Rozmiar tekstu punktacji */
+    font-weight: bold; /* Pogrubienie */
+    color: limegreen; /* Kolor tekstu */
+}
+
+#bet-sum-val {
+    font-size: 1.3rem; /* Rozmiar zakładu */
+    font-weight: bold; /* Pogrubienie */
+    color: yellow; /* Kolor tekstu */
+}
+
+
+/*-----------------------------------------------------------------------------------*/
+/*---------------------------------Stylizacja result-boxa----------------------------*/
+/*-----------------------------------------------------------------------------------*/
+#result-box {
+    position: fixed; /* Pozycjonowanie względem okna przeglądarki */
+    top: 50%; /* Wyśrodkowanie w pionie */
+    left: 50%; /* Wyśrodkowanie w poziomie */
+    transform: translate(-50%, -50%); /* Przesunięcie na środek */
+    width: 100%; /* Szerokość kwadratu */
+    height: 300px; /* Wysokość kwadratu (kwadrat) */
+    font-size: 20px; /* Rozmiar tekstu */
+    text-align: center; /* Wyśrodkowanie tekstu w poziomie */
+    line-height: 300px; /* Wyśrodkowanie tekstu w pionie */
+    border-radius: 10px; /* Zaokrąglone rogi */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Cień */
+    display: none; /* Domyślnie ukryty */
+    z-index: 1000; /* Warstwa na wierzchu */
+}
+
+/* Styl dla statusu 0 (Przegrana) */
+#result-box[data-status="0"] {
+    background-color: red;
+    color: yellow;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+/* Styl dla statusu 1 (Wygrana) */
+#result-box[data-status="1"] {
+    background-color: green;
+    color: yellow;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+/* Styl dla statusu 2 (Remis) */
+#result-box[data-status="2"] {
+    background-color: gray;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+}

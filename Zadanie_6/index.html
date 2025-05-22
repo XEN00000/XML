@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Casino</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main-container">
+        <div id="info-box">
+            <div class="info-content">
+                <h3>Scoreboard</h3>
+                <p>Player Wins: <span id="player-wins">0</span></p>
+                <p>Dealer Wins: <span id="dealer-wins">0</span></p>
+            </div>
+            <div class="info-content">
+                <h3>Bank</h3>
+                <p>Ammount: <span id="player-money">1000</span>$</p>
+            </div>
+        </div>
+
+        <div id="game-container">
+            <div id="start-game-phase">
+                <h1>BlackJack</h1>
+                <button id="start-game-button">Start Game</button>
+            </div>
+            <div id="gaming-phase">
+                <div id="dealer-area">
+                    <h2>Dealer</h2>
+                    <div id="dealer-cards"></div>
+                    <p>Score: <span id="dealer-score">0</span></p>
+                </div>
+                <div id="player-area">
+                    <h2>Player</h2>
+                    <div id="player-cards">
+                        <div id="set-1">
+                            <div id="hand-1"></div>
+                            <p>Score: <span id="player-score">0</span></p>
+                        </div>
+                    </div>
+                    <p>Bet: <span id="bet-sum-val">0</span>$</p>
+                    <div id="player-play-buttons">
+                        <button id="split">Split</button>
+                        <button id="double">Double</button>
+                        <button id="hit">Hit</button>
+                        <button id="stand">Stand</button>
+                        <button id="reset-game">Play</button>
+                    </div>
+                </div>
+            </div>
+            <div id="betting-phase">
+                <div id="bet-total">
+                    <p>Total Bet: <span id="bet-sum">0</span>$</p>
+                </div>
+                <div id="bet-display">
+                    <div id="current-bet" class="chip-container"></div>
+                </div>
+                <div id="bet-controls">
+                    <div id="player-bet-buttons">
+                        <button class="menu-button bet-button" data-value="5" id="five">5$</button>
+                        <button class="menu-button bet-button" data-value="10" id="ten">10$</button>
+                        <button class="menu-button bet-button" data-value="25" id="twenty-five">25$</button>
+                        <button class="menu-button bet-button" data-value="100" id="one-hundred">100$</button>
+                    </div>
+                    <button class="menu-button" id="play-game" disabled>Play</button>
+                </div>
+            </div>
+        </div>        
+    </div>
+    <div id="result-box"></div>
+    <script src="script.js"></script>
+</body>
+</html>
