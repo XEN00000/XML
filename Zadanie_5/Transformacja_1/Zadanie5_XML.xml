@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="Zadanie4_CSS.css"?>
+
+<FootballPlayers xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <!-- Informacje o dokumencie -->
+    <DocumentMetadata>
+        <Author>Łukasz Murza</Author>
+        <LastModified>2024-11-25</LastModified>
+        <Title>Piłkarze Premier League</Title>
+    </DocumentMetadata>
+
+    <!-- Dane o piłkarzach -->
+    <Players>
+        <Player id="P001">
+            <PlayerName>Erling Haaland</PlayerName>
+            <Position>Striker</Position>
+            <Nationality>
+                <Europe>Norwegia</Europe>
+            </Nationality>
+            <Age>24</Age>
+            <GA>0.5</GA>
+            <InClubFrom>2022-01-30</InClubFrom>
+            <PlayerClubRef ref="C001"/>
+            <MarketValue>€200.00m</MarketValue>
+        </Player>
+        <Player id="P002">
+            <PlayerName>Phil Foden</PlayerName>
+            <Position>RightWinger</Position>
+            <Nationality>
+                <Europe>Anglia</Europe>
+            </Nationality>
+            <Age>24</Age>
+            <GA>0.4</GA>
+            <InClubFrom>2016-07-01</InClubFrom>
+            <PlayerClubRef ref="C001"/>
+            <MarketValue>€150.00m</MarketValue>
+        </Player>
+        <Player id="P003">
+            <PlayerName>Bukayo Saka</PlayerName>
+            <Position>RightWinger</Position>
+            <Nationality>
+                <Europe>Anglia</Europe>
+            </Nationality>
+            <Age>23</Age>
+            <GA>0.6</GA>
+            <InClubFrom>2018-07-01</InClubFrom>
+            <PlayerClubRef ref="C002"/>
+            <MarketValue>€140.00m</MarketValue>
+        </Player>
+        <Player id="P004">
+            <PlayerName>Rodri</PlayerName>
+            <Position>DefensiveMidfielder</Position>
+            <Nationality>
+                <Europe>Hiszpania</Europe>
+            </Nationality>
+            <Age>28</Age>
+            <GA>0.2</GA>
+            <InClubFrom>2019-07-03</InClubFrom>
+            <PlayerClubRef ref="C001"/>
+            <MarketValue>€130.00m</MarketValue>
+        </Player>
+        <Player id="P005">
+            <PlayerName>Declan Rice</PlayerName>
+            <Position>DefensiveMidfielder</Position>
+            <Nationality>
+                <Europe>Anglia</Europe>
+            </Nationality>
+            <Age>25</Age>
+            <GA>0.3</GA>
+            <InClubFrom>2023-07-15</InClubFrom>
+            <PlayerClubRef ref="C002"/>
+            <MarketValue>€120.00m</MarketValue>
+        </Player>
+        <Player id="P006">
+            <PlayerName>Martin Ødegaard</PlayerName>
+            <Position>AttackingMidfielder</Position>
+            <Nationality>
+                <Europe>Norwegia</Europe>
+            </Nationality>
+            <Age>25</Age>
+            <GA>0.35</GA>
+            <InClubFrom>2023-07-01</InClubFrom>
+            <PlayerClubRef ref="C002"/>
+            <MarketValue>€110.00m</MarketValue>
+        </Player>
+        <Player id="P007">
+            <PlayerName>Cole Palmer</PlayerName>
+            <Position>RightWinger</Position>
+            <Nationality>
+                <Europe>Anglia</Europe>
+            </Nationality>
+            <Age>22</Age>
+            <GA>0.4</GA>
+            <InClubFrom>2021-07-01</InClubFrom>
+            <PlayerClubRef ref="C003"/>
+            <MarketValue>€90.00m</MarketValue>
+        </Player>
+        <Player id="P008">
+            <PlayerName>Bruno Guimarães</PlayerName>
+            <Position>DefensiveMidfielder</Position>
+            <Nationality>
+                <SouthAmerica>Brazylia</SouthAmerica>
+            </Nationality>
+            <Age>27</Age>
+            <GA>0.25</GA>
+            <InClubFrom>2022-01-30</InClubFrom>
+            <PlayerClubRef ref="C004"/>
+            <MarketValue>€85.00m</MarketValue>
+        </Player>
+        <Player id="P009">
+            <PlayerName>Luis Díaz</PlayerName>
+            <Position>LeftWinger</Position>
+            <Nationality>
+                <SouthAmerica>Kolumbia</SouthAmerica>
+            </Nationality>
+            <Age>27</Age>
+            <GA>0.3</GA>
+            <InClubFrom>2022-01-01</InClubFrom>
+            <PlayerClubRef ref="C005"/>
+            <MarketValue>€80.00m</MarketValue>
+        </Player>
+        <Player id="P010">
+            <PlayerName>Rúben Dias</PlayerName>
+            <Position>CenterBack</Position>
+            <Nationality>
+                <Europe>Portugalia</Europe>
+            </Nationality>
+            <Age>27</Age>
+            <GA>0.1</GA>
+            <InClubFrom>2020-09-29</InClubFrom>
+            <PlayerClubRef ref="C001"/>
+            <MarketValue>€80.00m</MarketValue>
+        </Player>
+        <Player id="P011">
+            <PlayerName>William Saliba</PlayerName>
+            <Position>CenterBack</Position>
+            <Nationality>
+                <Europe>Francja</Europe>
+            </Nationality>
+            <Age>23</Age>
+            <GA>0.2</GA>
+            <InClubFrom>2021-07-01</InClubFrom>
+            <PlayerClubRef ref="C002"/>
+            <MarketValue>€80.00m</MarketValue>
+        </Player>
+        <Player id="P012">
+            <PlayerName>Enzo Fernández</PlayerName>
+            <Position>DefensiveMidfielder</Position>
+            <Nationality>
+                <SouthAmerica>Argentyna</SouthAmerica>
+            </Nationality>
+            <Age>23</Age>
+            <GA>0.25</GA>
+            <InClubFrom>2023-01-01</InClubFrom>
+            <PlayerClubRef ref="C003"/>
+            <MarketValue>€75.00m</MarketValue>
+        </Player>
+        <Player id="P013">
+            <PlayerName>Alexis Mac Allister</PlayerName>
+            <Position>DefensiveMidfielder</Position>
+            <Nationality>
+                <SouthAmerica>Argentyna</SouthAmerica>
+            </Nationality>
+            <Age>25</Age>
+            <GA>0.3</GA>
+            <InClubFrom>2023-07-01</InClubFrom>
+            <PlayerClubRef ref="C005"/>
+            <MarketValue>€75.00m</MarketValue>
+        </Player>
+        <Player id="P014">
+            <PlayerName>Moisés Caicedo</PlayerName>
+            <Position>DefensiveMidfielder</Position>
+            <Nationality>
+                <SouthAmerica>Ekwador</SouthAmerica>
+            </Nationality>
+            <Age>23</Age>
+            <GA>0.2</GA>
+            <InClubFrom>2023-08-01</InClubFrom>
+            <PlayerClubRef ref="C003"/>
+            <MarketValue>€75.00m</MarketValue>
+        </Player>
+        <Player id="P015">
+            <PlayerName>Alexander Isak</PlayerName>
+            <Position>Striker</Position>
+            <Nationality>
+                <Europe>Szwecja</Europe>
+            </Nationality>
+            <Age>25</Age>
+            <GA>0.4</GA>
+            <InClubFrom>2021-07-01</InClubFrom>
+            <PlayerClubRef ref="C004"/>
+            <MarketValue>€75.00m</MarketValue>
+        </Player>
+        <Player id="P016">
+            <PlayerName>Josko Gvardiol</PlayerName>
+            <Position>CenterBack</Position>
+            <Nationality>
+                <Europe>Chorwacja</Europe>
+            </Nationality>
+            <Age>22</Age>
+            <GA>0.1</GA>
+            <InClubFrom>2023-07-01</InClubFrom>
+            <PlayerClubRef ref="C001"/>
+            <MarketValue>€75.00m</MarketValue>
+        </Player>
+        <Player id="P017">
+            <PlayerName>Dominik Szoboszlai</PlayerName>
+            <Position>AttackingMidfielder</Position>
+            <Nationality>
+                <Europe>Węgry</Europe>
+            </Nationality>
+            <Age>24</Age>
+            <GA>0.4</GA>
+            <InClubFrom>2023-07-01</InClubFrom>
+            <PlayerClubRef ref="C005"/>
+            <MarketValue>€75.00m</MarketValue>
+        </Player>
+        <Player id="P018">
+            <PlayerName>Gabriel Magalhães</PlayerName>
+            <Position>CenterBack</Position>
+            <Nationality>
+                <SouthAmerica>Brazylia</SouthAmerica>
+            </Nationality>
+            <Age>26</Age>
+            <GA>0.2</GA>
+            <InClubFrom>2020-09-01</InClubFrom>
+            <PlayerClubRef ref="C002"/>
+            <MarketValue>€75.00m</MarketValue>
+        </Player>
+        <Player id="P019">
+            <PlayerName>Kai Havertz</PlayerName>
+            <Position>Striker</Position>
+            <Nationality>
+                <Europe>Niemcy</Europe>
+            </Nationality>
+            <Age>25</Age>
+            <GA>0.3</GA>
+            <InClubFrom>2023-07-01</InClubFrom>
+            <PlayerClubRef ref="C002"/>
+            <MarketValue>€75.00m</MarketValue>
+        </Player>
+        <Player id="P020">
+            <PlayerName>Trent Alexander-Arnold</PlayerName>
+            <Position>RightBack</Position>
+            <Nationality>
+                <Europe>Anglia</Europe>
+            </Nationality>
+            <Age>26</Age>
+            <GA>0.1</GA>
+            <InClubFrom>2018-07-01</InClubFrom>
+            <PlayerClubRef ref="C005"/>
+            <MarketValue>€70.00m</MarketValue>
+        </Player>
+    </Players>
+
+    <!-- Dane o klubach -->
+    <Clubs>
+        <Club id="C001">
+            <ClubName>Manchester City</ClubName>
+            <City>Manchester</City>
+            <Stadium>Etihad Stadium</Stadium>
+        </Club>
+        <Club id="C002">
+            <ClubName>Arsenal FC</ClubName>
+            <City>Londyn</City>
+            <Stadium>Emirates Stadium</Stadium>
+        </Club>
+        <Club id="C003">
+            <ClubName>Chelsea FC</ClubName>
+            <City>Londyn</City>
+            <Stadium>Stamford Bridge</Stadium>
+        </Club>
+        <Club id="C004">
+            <ClubName>Newcastle United</ClubName>
+            <City>Newcastle</City>
+            <Stadium>St James' Park</Stadium>
+        </Club>
+        <Club id="C005">
+            <ClubName>Liverpool FC</ClubName>
+            <City>Liverpool</City>
+            <Stadium>Anfield</Stadium>
+        </Club>
+    </Clubs>
+
+    <!-- Dane o trenerach -->
+    <Coaches>
+        <Coach id="T001">
+            <CoachName>Pep Guardiola</CoachName>
+            <ClubRef>C001</ClubRef>
+            <ExperienceYears>17</ExperienceYears>
+            <Achievements>
+                <ol>
+                    <li>Światowy trener roku 2008</li>
+                    <li>Światowy trener roku 2010</li>
+                    <li>Światowy trener roku 22/23</li>
+                    <li>Zdobywca ligi mistrzów 08/09</li>
+                    <li>Zdobywca ligi mistrzów 10/11</li>
+                    <li>Zdobywca ligi mistrzów 22/23</li>
+                    <li>Zdobywca klubowych mistrzostw świata 09/10</li>
+                    <li>Zdobywca klubowych mistrzostw świata 11/12</li>
+                    <li>Zdobywca klubowych mistrzostw świata 13/14</li>
+                    <li>Zdobywca klubowych mistrzostw świata 23/24</li>
+                    <li>Misrz Anglii 17/18</li>
+                    <li>Misrz Anglii 18/19</li>
+                    <li>Misrz Anglii 20/21</li>
+                    <li>Misrz Anglii 21/22</li>
+                    <li>Misrz Anglii 22/23</li>
+                    <li>Misrz Anglii 23/24</li>
+                    <li>Misrz Niemiec 13/14</li>
+                    <li>Misrz Niemiec 14/15</li>
+                    <li>Misrz Niemiec 15/16</li>
+                    <li>Misrz Hiszpanii 08/09</li>
+                    <li>Misrz Hiszpanii 09/10</li>
+                    <li>Misrz Hiszpanii 10/11</li>
+                    <li>Zdobywca pucharu Anglii 18/19</li>
+                    <li>Zdobywca superpucharu Anglii 18/19</li>
+                </ol>
+            </Achievements>
+        </Coach>
+        <Coach id="T002">
+            <CoachName>Mikel Arteta</CoachName>
+            <ClubRef>C002</ClubRef>
+            <ExperienceYears>8</ExperienceYears>
+            <Achievements>
+                <ol>
+                    <li>Misrz Anglii 17/18</li>
+                    <li>Misrz Anglii 18/19</li>
+                    <li>Zdobywca pucharu Anglii 18/19</li>
+                    <li>Zdobywca pucharu Anglii 19/20</li>
+                    <li>Zdobywca superpucharu Anglii 18/19</li>
+                    <li>Zdobywca superpucharu Anglii 20/21</li>
+                    <li>Zdobywca superpucharu Anglii 23/24</li>
+                </ol>
+            </Achievements>
+        </Coach>
+        <Coach id="T003">
+            <CoachName>Enzo Maresca</CoachName>
+            <ClubRef>C003</ClubRef>
+            <ExperienceYears>2</ExperienceYears>
+            <Achievements>
+                <ol>
+                    <li>Zwycięzca Championship 23/24</li>
+                </ol>
+            </Achievements>
+        </Coach>
+        <Coach id="T004">
+            <CoachName>Eddie Howe</CoachName>
+            <ClubRef>C004</ClubRef>
+            <ExperienceYears>18</ExperienceYears>
+            <Achievements>
+                <ol>
+                    <li>Zwycięzca Championship 14/15</li>
+                </ol>
+            </Achievements>
+        </Coach>
+        <Coach id="T005">
+            <CoachName>Arne Slot</CoachName>
+            <ClubRef>C005</ClubRef>
+            <ExperienceYears>7</ExperienceYears>
+            <Achievements>
+                <ol>
+                    <li>Mistrz Holandii 22/23</li>
+                    <li>Zdobywca pucharu Holandii 23/24</li>
+                </ol>
+            </Achievements>
+        </Coach>
+    </Coaches>
+</FootballPlayers>

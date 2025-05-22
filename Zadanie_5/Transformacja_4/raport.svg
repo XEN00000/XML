@@ -1,0 +1,666 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     viewBox="0 0 1900 600"
+     width="1900"
+     height="600">
+   <script type="text/ecmascript">
+                
+                function onHover(rect) {
+                    rect.setAttribute("fill", "orange");
+                }
+                function onLeave(rect) {
+                    rect.setAttribute("fill", "steelblue");
+                }
+                
+            </script>
+   <text x="950"
+         y="30"
+         text-anchor="middle"
+         font-size="20"
+         font-family="Arial"
+         fill="black">
+                Wartość rynkowa zawodników (€)
+            </text>
+   <line x1="70"
+         y1="500"
+         x2="1870"
+         y2="500"
+         stroke="black"
+         stroke-width="2">
+      <animate attributeName="stroke-width"
+               from="2"
+               to="4"
+               dur="1s"
+               repeatCount="indefinite"/>
+   </line>
+   <line x1="70"
+         y1="500"
+         x2="70"
+         y2="100"
+         stroke="black"
+         stroke-width="2">
+      <animate attributeName="stroke-width"
+               from="2"
+               to="4"
+               dur="1s"
+               repeatCount="indefinite"/>
+   </line>
+   <text x="950"
+         y="550"
+         text-anchor="middle"
+         font-size="14"
+         font-family="Arial"
+         fill="black">
+                Zawodnicy
+            </text>
+   <text x="30"
+         y="300"
+         text-anchor="middle"
+         font-size="14"
+         font-family="Arial"
+         fill="black"
+         transform="rotate(-90, 30, 300)">
+                Wartość rynkowa (€)
+            </text>
+   <rect x="80"
+         y="166.66666666666663"
+         width="50"
+         height="333.33333333333337"
+         fill="steelblue"
+         onmouseover="onHover(this)"
+         onmouseout="onLeave(this)">
+      <animate attributeName="height"
+               from="0"
+               to="333.33333333333337"
+               dur="1s"
+               fill="freeze"/>
+   </rect>
+   <text x="105"
+         y="156.66666666666663"
+         text-anchor="middle"
+         font-size="10"
+         font-family="Arial"
+         fill="black">€200.00m</text>
+   <text x="105"
+         y="515"
+         text-anchor="middle"
+         font-size="10"
+         font-family="Arial"
+         fill="black">Erling Haaland<animate attributeName="fill"
+               from="black"
+               to="red"
+               dur="1s"
+               repeatCount="indefinite"/>
+   </text>
+   <rect x="170"
+         y="250"
+         width="50"
+         height="250"
+         fill="steelblue"
+         onmouseover="onHover(this)"
+         onmouseout="onLeave(this)">
+      <animate attributeName="height"
+               from="0"
+               to="250"
+               dur="1s"
+               fill="freeze"/>
+   </rect>
+   <text x="195"
+         y="240"
+         text-anchor="middle"
+         font-size="10"
+         font-family="Arial"
+         fill="black">€150.00m</text>
+   <text x="195"
+         y="515"
+         text-anchor="middle"
+         font-size="10"
+         font-family="Arial"
+         fill="black">Phil Foden<animate attributeName="fill"
+               from="black"
+               to="red"
+               dur="1s"
+               repeatCount="indefinite"/>
+   </text>
+   <rect x="260"
+         y="266.66666666666663"
+         width="50"
+         height="233.33333333333334"
+         fill="steelblue"
+         onmouseover="onHover(this)"
+         onmouseout="onLeave(this)">
+      <animate attributeName="height"
+               from="0"
+               to="233.33333333333334"
+               dur="1s"
+               fill="freeze"/>
+   </rect>
+   <text x="285"
+         y="256.66666666666663"
+         text-anchor="middle"
+         font-size="10"
+         font-family="Arial"
+         fill="black">€140.00m</text>
+   <text x="285"
+         y="515"
+         text-anchor="middle"
+         font-size="10"
+         font-family="Arial"
+         fill="black">Bukayo Saka<animate attributeName="fill"
+               from="black"
+               to="red"
+               dur="1s"
+               repeatCount="indefinite"/>
+   </text>
+   <rect x="350"
+         y="283.3333333333333"
+         width="50"
+         height="216.66666666666669"
+         fill="steelblue"
+         onmouseover="onHover(this)"
+         onmouseout="onLeave(this)">
+      <animate attributeName="height"
+               from="0"
+               to="216.66666666666669"
+               dur="1s"
+               fill="freeze"/>
+   </rect>
+   <text x="375"
+         y="273.3333333333333"
+         text-anchor="middle"
+         font-size="10"
+         font-family="Arial"
+         fill="black">€130.00m</text>
+   <text x="375"
+         y="515"
+         text-anchor="middle"
+         font-size="10"
+         font-family="Arial"
+         fill="black">Rodri<animate attributeName="fill"
+               from="black"
+               to="red"
+               dur="1s"
+               repeatCount="indefinite"/>
+   </text>
+   <rect x="440"
+         y="300"
+         width="50"
+         height="200"
+         fill="steelblue"
+         onmouseover="onHover(this)"
+         onmouseout="onLeave(this)">
+      <animate attributeName="height"
+               from="0"
+               to="200"
+               dur="1s"
+               fill="freeze"/>
+   </rect>
+   <text x="465"
+         y="290"
+         text-anchor="middle"
+         font-size="10"
+         font-family="Arial"
+         fill="black">€120.00m</text>
+   <text x="465"
+         y="515"
+         text-anchor="middle"
+         font-size="10"
+         font-family="Arial"
+         fill="black">Declan Rice<animate attributeName="fill"
+               from="black"
+               to="red"
+               dur="1s"
+               repeatCount="indefinite"/>
+   </text>
+   <rect x="530"
+         y="316.66666666666663"
+         width="50"
+         height="183.33333333333334"
+         fill="steelblue"
+         onmouseover="onHover(this)"
+         onmouseout="onLeave(this)">
+      <animate attributeName="height"
+               from="0"
+               to="183.33333333333334"
+               dur="1s"
+               fill="freeze"/>
+   </rect>
+   <text x="555"
+         y="306.66666666666663"
+         text-anchor="middle"
+         font-size="10"
+         font-family="Arial"
+         fill="black">€110.00m</text>
+   <text x="555"
+         y="515"
+         text-anchor="middle"
+         font-size="10"
+         font-family="Arial"
+         fill="black">Martin Ødegaard<animate attributeName="fill"
+               from="black"
+               to="red"
+               dur="1s"
+               repeatCount="indefinite"/>
+   </text>
+   <rect x="620"
+         y="350"
+         width="50"
+         height="150"
+         fill="steelblue"
+         onmouseover="onHover(this)"
+         onmouseout="onLeave(this)">
+      <animate attributeName="height"
+               from="0"
+               to="150"
+               dur="1s"
+               fill="freeze"/>
+   </rect>
+   <text x="645"
+         y="340"
+         text-anchor="middle"
+         font-size="10"
+         font-family="Arial"
+         fill="black">€90.00m</text>
+   <text x="645"
+         y="515"
+         text-anchor="middle"
+         font-size="10"
+         font-family="Arial"
+         fill="black">Cole Palmer<animate attributeName="fill"
+               from="black"
+               to="red"
+               dur="1s"
+               repeatCount="indefinite"/>
+   </text>
+   <rect x="710"
+         y="358.3333333333333"
+         width="50"
+         height="141.66666666666669"
+         fill="steelblue"
+         onmouseover="onHover(this)"
+         onmouseout="onLeave(this)">
+      <animate attributeName="height"
+               from="0"
+               to="141.66666666666669"
+               dur="1s"
+               fill="freeze"/>
+   </rect>
+   <text x="735"
+         y="348.3333333333333"
+         text-anchor="middle"
+         font-size="10"
+         font-family="Arial"
+         fill="black">€85.00m</text>
+   <text x="735"
+         y="515"
+         text-anchor="middle"
+         font-size="10"
+         font-family="Arial"
+         fill="black">Bruno Guimarães<animate attributeName="fill"
+               from="black"
+               to="red"
+               dur="1s"
+               repeatCount="indefinite"/>
+   </text>
+   <rect x="800"
+         y="366.66666666666663"
+         width="50"
+         height="133.33333333333334"
+         fill="steelblue"
+         onmouseover="onHover(this)"
+         onmouseout="onLeave(this)">
+      <animate attributeName="height"
+               from="0"
+               to="133.33333333333334"
+               dur="1s"
+               fill="freeze"/>
+   </rect>
+   <text x="825"
+         y="356.66666666666663"
+         text-anchor="middle"
+         font-size="10"
+         font-family="Arial"
+         fill="black">€80.00m</text>
+   <text x="825"
+         y="515"
+         text-anchor="middle"
+         font-size="10"
+         font-family="Arial"
+         fill="black">Luis Díaz<animate attributeName="fill"
+               from="black"
+               to="red"
+               dur="1s"
+               repeatCount="indefinite"/>
+   </text>
+   <rect x="890"
+         y="366.66666666666663"
+         width="50"
+         height="133.33333333333334"
+         fill="steelblue"
+         onmouseover="onHover(this)"
+         onmouseout="onLeave(this)">
+      <animate attributeName="height"
+               from="0"
+               to="133.33333333333334"
+               dur="1s"
+               fill="freeze"/>
+   </rect>
+   <text x="915"
+         y="356.66666666666663"
+         text-anchor="middle"
+         font-size="10"
+         font-family="Arial"
+         fill="black">€80.00m</text>
+   <text x="915"
+         y="515"
+         text-anchor="middle"
+         font-size="10"
+         font-family="Arial"
+         fill="black">Rúben Dias<animate attributeName="fill"
+               from="black"
+               to="red"
+               dur="1s"
+               repeatCount="indefinite"/>
+   </text>
+   <rect x="980"
+         y="366.66666666666663"
+         width="50"
+         height="133.33333333333334"
+         fill="steelblue"
+         onmouseover="onHover(this)"
+         onmouseout="onLeave(this)">
+      <animate attributeName="height"
+               from="0"
+               to="133.33333333333334"
+               dur="1s"
+               fill="freeze"/>
+   </rect>
+   <text x="1005"
+         y="356.66666666666663"
+         text-anchor="middle"
+         font-size="10"
+         font-family="Arial"
+         fill="black">€80.00m</text>
+   <text x="1005"
+         y="515"
+         text-anchor="middle"
+         font-size="10"
+         font-family="Arial"
+         fill="black">William Saliba<animate attributeName="fill"
+               from="black"
+               to="red"
+               dur="1s"
+               repeatCount="indefinite"/>
+   </text>
+   <rect x="1070"
+         y="375"
+         width="50"
+         height="125"
+         fill="steelblue"
+         onmouseover="onHover(this)"
+         onmouseout="onLeave(this)">
+      <animate attributeName="height"
+               from="0"
+               to="125"
+               dur="1s"
+               fill="freeze"/>
+   </rect>
+   <text x="1095"
+         y="365"
+         text-anchor="middle"
+         font-size="10"
+         font-family="Arial"
+         fill="black">€75.00m</text>
+   <text x="1095"
+         y="515"
+         text-anchor="middle"
+         font-size="10"
+         font-family="Arial"
+         fill="black">Enzo Fernández<animate attributeName="fill"
+               from="black"
+               to="red"
+               dur="1s"
+               repeatCount="indefinite"/>
+   </text>
+   <rect x="1160"
+         y="375"
+         width="50"
+         height="125"
+         fill="steelblue"
+         onmouseover="onHover(this)"
+         onmouseout="onLeave(this)">
+      <animate attributeName="height"
+               from="0"
+               to="125"
+               dur="1s"
+               fill="freeze"/>
+   </rect>
+   <text x="1185"
+         y="365"
+         text-anchor="middle"
+         font-size="10"
+         font-family="Arial"
+         fill="black">€75.00m</text>
+   <text x="1185"
+         y="515"
+         text-anchor="middle"
+         font-size="10"
+         font-family="Arial"
+         fill="black">Alexis Mac Allister<animate attributeName="fill"
+               from="black"
+               to="red"
+               dur="1s"
+               repeatCount="indefinite"/>
+   </text>
+   <rect x="1250"
+         y="375"
+         width="50"
+         height="125"
+         fill="steelblue"
+         onmouseover="onHover(this)"
+         onmouseout="onLeave(this)">
+      <animate attributeName="height"
+               from="0"
+               to="125"
+               dur="1s"
+               fill="freeze"/>
+   </rect>
+   <text x="1275"
+         y="365"
+         text-anchor="middle"
+         font-size="10"
+         font-family="Arial"
+         fill="black">€75.00m</text>
+   <text x="1275"
+         y="515"
+         text-anchor="middle"
+         font-size="10"
+         font-family="Arial"
+         fill="black">Moisés Caicedo<animate attributeName="fill"
+               from="black"
+               to="red"
+               dur="1s"
+               repeatCount="indefinite"/>
+   </text>
+   <rect x="1340"
+         y="375"
+         width="50"
+         height="125"
+         fill="steelblue"
+         onmouseover="onHover(this)"
+         onmouseout="onLeave(this)">
+      <animate attributeName="height"
+               from="0"
+               to="125"
+               dur="1s"
+               fill="freeze"/>
+   </rect>
+   <text x="1365"
+         y="365"
+         text-anchor="middle"
+         font-size="10"
+         font-family="Arial"
+         fill="black">€75.00m</text>
+   <text x="1365"
+         y="515"
+         text-anchor="middle"
+         font-size="10"
+         font-family="Arial"
+         fill="black">Alexander Isak<animate attributeName="fill"
+               from="black"
+               to="red"
+               dur="1s"
+               repeatCount="indefinite"/>
+   </text>
+   <rect x="1430"
+         y="375"
+         width="50"
+         height="125"
+         fill="steelblue"
+         onmouseover="onHover(this)"
+         onmouseout="onLeave(this)">
+      <animate attributeName="height"
+               from="0"
+               to="125"
+               dur="1s"
+               fill="freeze"/>
+   </rect>
+   <text x="1455"
+         y="365"
+         text-anchor="middle"
+         font-size="10"
+         font-family="Arial"
+         fill="black">€75.00m</text>
+   <text x="1455"
+         y="515"
+         text-anchor="middle"
+         font-size="10"
+         font-family="Arial"
+         fill="black">Josko Gvardiol<animate attributeName="fill"
+               from="black"
+               to="red"
+               dur="1s"
+               repeatCount="indefinite"/>
+   </text>
+   <rect x="1520"
+         y="375"
+         width="50"
+         height="125"
+         fill="steelblue"
+         onmouseover="onHover(this)"
+         onmouseout="onLeave(this)">
+      <animate attributeName="height"
+               from="0"
+               to="125"
+               dur="1s"
+               fill="freeze"/>
+   </rect>
+   <text x="1545"
+         y="365"
+         text-anchor="middle"
+         font-size="10"
+         font-family="Arial"
+         fill="black">€75.00m</text>
+   <text x="1545"
+         y="515"
+         text-anchor="middle"
+         font-size="10"
+         font-family="Arial"
+         fill="black">Dominik Szoboszlai<animate attributeName="fill"
+               from="black"
+               to="red"
+               dur="1s"
+               repeatCount="indefinite"/>
+   </text>
+   <rect x="1610"
+         y="375"
+         width="50"
+         height="125"
+         fill="steelblue"
+         onmouseover="onHover(this)"
+         onmouseout="onLeave(this)">
+      <animate attributeName="height"
+               from="0"
+               to="125"
+               dur="1s"
+               fill="freeze"/>
+   </rect>
+   <text x="1635"
+         y="365"
+         text-anchor="middle"
+         font-size="10"
+         font-family="Arial"
+         fill="black">€75.00m</text>
+   <text x="1635"
+         y="515"
+         text-anchor="middle"
+         font-size="10"
+         font-family="Arial"
+         fill="black">Gabriel Magalhães<animate attributeName="fill"
+               from="black"
+               to="red"
+               dur="1s"
+               repeatCount="indefinite"/>
+   </text>
+   <rect x="1700"
+         y="375"
+         width="50"
+         height="125"
+         fill="steelblue"
+         onmouseover="onHover(this)"
+         onmouseout="onLeave(this)">
+      <animate attributeName="height"
+               from="0"
+               to="125"
+               dur="1s"
+               fill="freeze"/>
+   </rect>
+   <text x="1725"
+         y="365"
+         text-anchor="middle"
+         font-size="10"
+         font-family="Arial"
+         fill="black">€75.00m</text>
+   <text x="1725"
+         y="515"
+         text-anchor="middle"
+         font-size="10"
+         font-family="Arial"
+         fill="black">Kai Havertz<animate attributeName="fill"
+               from="black"
+               to="red"
+               dur="1s"
+               repeatCount="indefinite"/>
+   </text>
+   <rect x="1790"
+         y="383.3333333333333"
+         width="50"
+         height="116.66666666666667"
+         fill="steelblue"
+         onmouseover="onHover(this)"
+         onmouseout="onLeave(this)">
+      <animate attributeName="height"
+               from="0"
+               to="116.66666666666667"
+               dur="1s"
+               fill="freeze"/>
+   </rect>
+   <text x="1815"
+         y="373.3333333333333"
+         text-anchor="middle"
+         font-size="10"
+         font-family="Arial"
+         fill="black">€70.00m</text>
+   <text x="1815"
+         y="515"
+         text-anchor="middle"
+         font-size="10"
+         font-family="Arial"
+         fill="black">Trent Alexander-Arnold<animate attributeName="fill"
+               from="black"
+               to="red"
+               dur="1s"
+               repeatCount="indefinite"/>
+   </text>
+</svg>

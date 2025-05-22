@@ -1,0 +1,34 @@
++---------------------------+----------------------+-------+-------------------+
+| Nazwisko                  | Pozycja              | Wiek  | Wartość rynkowa   |
++---------------------------+----------------------+-------+-------------------+
+| Erling Haaland            | Striker              | 24    | €200.00m          |
+| Phil Foden                | RightWinger          | 24    | €150.00m          |
+| Bukayo Saka               | RightWinger          | 23    | €140.00m          |
+| Rodri                     | DefensiveMidfielder  | 28    | €130.00m          |
+| Declan Rice               | DefensiveMidfielder  | 25    | €120.00m          |
+| Martin Ødegaard           | AttackingMidfielder  | 25    | €110.00m          |
+| Cole Palmer               | RightWinger          | 22    | €90.00m           |
+| Bruno Guimarães           | DefensiveMidfielder  | 27    | €85.00m           |
+| Luis Díaz                 | LeftWinger           | 27    | €80.00m           |
+| Rúben Dias                | CenterBack           | 27    | €80.00m           |
+| William Saliba            | CenterBack           | 23    | €80.00m           |
+| Enzo Fernández            | DefensiveMidfielder  | 23    | €75.00m           |
+| Alexis Mac Allister       | DefensiveMidfielder  | 25    | €75.00m           |
+| Moisés Caicedo            | DefensiveMidfielder  | 23    | €75.00m           |
+| Alexander Isak            | Striker              | 25    | €75.00m           |
+| Josko Gvardiol            | CenterBack           | 22    | €75.00m           |
+| Dominik Szoboszlai        | AttackingMidfielder  | 24    | €75.00m           |
+| Gabriel Magalhães         | CenterBack           | 26    | €75.00m           |
+| Kai Havertz               | Striker              | 25    | €75.00m           |
+| Trent Alexander-Arnold    | RightBack            | 26    | €70.00m           |
++---------------------------+----------------------+-------+-------------------+
+
++---------------------------+---------------------------+-------------------+
+| Nazwisko                  | Klub                      | Doświadczenie     |
++---------------------------+---------------------------+-------------------+
+| Pep Guardiola             | Manchester City           | 17 lat            |
+| Mikel Arteta              | Arsenal FC                | 8 lat             |
+| Enzo Maresca              | Chelsea FC                | 2 lat             |
+| Eddie Howe                | Newcastle United          | 18 lat            |
+| Arne Slot                 | Liverpool FC              | 7 lat             |
++---------------------------+---------------------------+-------------------+

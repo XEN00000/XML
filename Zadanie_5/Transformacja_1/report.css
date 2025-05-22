@@ -1,0 +1,222 @@
+/*------------------------------ TITLE ------------------------------*/
+Title {
+    background-color: #f1f1f1; /* Jasne tło dla sekcji */
+    border: 1px solid #cccccc; /* Obramowanie sekcji */
+    padding: 20px; /* Wewnętrzne odstępy */
+    margin: 20px; /* Odstęp od innych elementów */
+    display: flex; /* Flexbox dla wewnętrznych elementów */
+    justify-content: center; /* Równomierne rozmieszczenie podbloków */
+    margin-bottom: 0;
+    border-bottom: 0;
+}
+
+/*------------------------------ DATE ------------------------------*/
+DateGenerated {
+    background-color: #f1f1f1; /* Jasne tło dla sekcji */
+    border: 1px solid #cccccc; /* Obramowanie sekcji */
+    padding: 20px; /* Wewnętrzne odstępy */
+    margin: 20px; /* Odstęp od innych elementów */
+    gap: 1vh;
+    display: flex; /* Flexbox dla wewnętrznych elementów */
+    justify-content: center; /* Równomierne rozmieszczenie podbloków */
+    margin-top: 0;
+    border-top: 0;
+}
+
+DateGenerated::before {
+    content: "Data wydania raportu: ";
+    color: #707070;
+}
+/*------------------------------ CLUB:NAME ------------------------------*/
+Club Name {
+    background-color: #f1f1f1; /* Jasne tło dla sekcji */
+    border: 1px solid #cccccc; /* Obramowanie sekcji */
+    padding: 20px; /* Wewnętrzne odstępy */
+    margin: 20px; /* Odstęp od innych elementów */
+    display: flex; /* Flexbox dla wewnętrznych elementów */
+    justify-content: center; /* Równomierne rozmieszczenie podbloków */
+    margin-bottom: 0;
+    border-bottom: 0;
+}
+/*------------------------------ CITY ------------------------------*/
+City {
+    background-color: #f1f1f1; /* Jasne tło dla sekcji */
+    border: 1px solid #cccccc; /* Obramowanie sekcji */
+    padding: 20px; /* Wewnętrzne odstępy */
+    margin: 20px; /* Odstęp od innych elementów */
+    display: flex; /* Flexbox dla wewnętrznych elementów */
+    gap: 20px; /* Odstępy między wewnętrznymi blokami */
+    justify-content: center; /* Równomierne rozmieszczenie podbloków */
+    margin-bottom: 0;
+    border-bottom: 0;
+    margin-top: 0;
+    border-top: 0;
+}
+
+/*------------------------------ SUMMARY ------------------------------*/
+
+/* Stylizacja głównego kontenera sekcji podsumowania */
+Club Summary {
+    background-color: #f1f1f1; /* Jasne tło dla sekcji */
+    border: 1px solid #cccccc; /* Obramowanie sekcji */
+    padding: 20px; /* Wewnętrzne odstępy */
+    margin: 20px; /* Odstęp od innych elementów */
+    display: flex; /* Flexbox dla wewnętrznych elementów */
+    gap: 20px; /* Odstępy między wewnętrznymi blokami */
+    justify-content: space-between; /* Równomierne rozmieszczenie podbloków */
+    border-top: 0;
+    margin-top: 0;
+}
+
+/* Każdy element podsumowania w osobnym bloku */
+Club Summary > * {
+    flex: 1; /* Wszystkie bloki mają równą szerokość */
+    text-align: center; /* Wyśrodkowanie tekstu */
+    background-color: #ffffff; /* Białe tło dla każdego bloku */
+    border: 1px solid #dddddd; /* Obramowanie bloku */
+    border-radius: 8px; /* Zaokrąglone rogi */
+    padding: 10px; /* Wewnętrzne odstępy */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Delikatny cień */
+}
+
+/* Stylizacja dla każdego elementu (tytuł i wartość) */
+Club Summary TotalPlayers:before,
+Club Summary TotalPlayerValue:before,
+Club Summary AveragePlayerAge:before,
+Club Summary HighestGA:before {
+    display: block; /* Wyświetlenie jako osobna linia */
+    font-size: 14px; /* Rozmiar czcionki dla tytułu */
+    font-weight: bold; /* Pogrubienie tytułu */
+    color: #555555; /* Kolor tytułu */
+    margin-bottom: 5px; /* Odstęp od wartości */
+}
+
+Club Summary TotalPlayers:before {
+    content: "Liczba zawodników: ";
+}
+
+Club Summary TotalPlayerValue:before {
+    content: "Łączna wartość zawodników: ";
+}
+
+Club Summary TotalPlayerValue::after {
+    content: " mln €";
+}
+
+Club Summary AveragePlayerAge:before {
+    content: "Średni wiek zawodników: ";
+}
+
+Club Summary AveragePlayerAge::after {
+    content: " lat";
+}
+
+Club Summary HighestGA:before {
+    content: "Najwyższe G/A: ";
+}
+
+Club Summary HighestGA::after {
+    content: " na mecz";
+}
+
+/* Stylizacja wartości w bloku */
+Club Summary TotalPlayers,
+Club Summary TotalPlayerValue,
+Club Summary AveragePlayerAge,
+Club Summary HighestGA {
+    font-size: 18px; /* Rozmiar czcionki wartości */
+    font-weight: bold; /* Pogrubienie wartości */
+    color: #333333; /* Kolor wartości */
+    display: block; /* Wyświetlenie jako osobna linia */
+}
+
+
+/*------------------------------ PLAYERS ------------------------------*/
+/* Kontener dla zawodników */
+Club Players {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; /* Wyśrodkowanie w poziomie */
+    align-content: flex-start; /* Wyrównanie wszystkich wierszy do góry */
+    margin: 0 auto;
+}
+
+
+/* Stylizacja pojedynczego zawodnika w bloku */
+Club Players Player {
+    flex: 1 1 calc(33.333% - 20px); /* Szerokość bloku: 1/3 przestrzeni */
+    max-width: calc(33.333% - 20px); /* Ograniczenie maksymalnej szerokości */
+    border: 1px solid #cccccc; /* Obramowanie bloku */
+    border-radius: 5px; /* Zaokrąglone rogi */
+    padding: 15px; /* Wewnętrzne odstępy */
+    background-color: #f9f9f9; /* Kolor tła */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Delikatny cień */
+    text-align: center; /* Wyśrodkowanie tekstu wewnątrz bloku */
+}
+
+/* Nazwa zawodnika */
+Club Players Player Name {
+    font-size: 18px; /* Rozmiar czcionki */
+    font-weight: bold; /* Pogrubienie */
+    color: #0056b3; /* Kolor tekstu */
+    margin-bottom: 10px; /* Odstęp od reszty danych */
+    display: block; /* Wyświetlanie w osobnej linii */
+}
+
+/* Pozostałe informacje o zawodniku */
+Club Players Player Nationality,
+Club Players Player Age,
+Club Players Player MarketValue {
+    font-size: 14px; /* Rozmiar czcionki */
+    color: #555; /* Kolor tekstu */
+    margin-bottom: 5px; /* Odstęp między liniami */
+    display: block; /* Każda informacja w osobnej linii */
+}
+
+Club Players Player Age::after {
+    content: " lat";
+}
+
+
+/*------------------------------ COATCH ------------------------------*/
+Club Coach Name {
+    background-color: #f1f1f1; /* Jasne tło dla sekcji */
+    border: 1px solid #cccccc; /* Obramowanie sekcji */
+    border-radius: 8px; /* Zaokrąglone rogi */
+    padding: 20px; /* Wewnętrzne odstępy */
+    margin: 20px; /* Odstęp od innych elementów */
+    gap: 1vh;
+    display: flex; /* Flexbox dla wewnętrznych elementów */
+    justify-content: center; /* Równomierne rozmieszczenie podbloków */
+    margin-bottom: 0;
+    border-bottom: 0;
+}
+
+Club Coach Name::before {
+    color: #525252;
+    content: "Trener:";
+}
+
+Club Coach ExperienceYears {
+    background-color: #f1f1f1; /* Jasne tło dla sekcji */
+    border: 1px solid #cccccc; /* Obramowanie sekcji */
+    border-radius: 8px; /* Zaokrąglone rogi */
+    padding: 20px; /* Wewnętrzne odstępy */
+    margin: 20px; /* Odstęp od innych elementów */
+    gap: 1vh;
+    display: flex; /* Flexbox dla wewnętrznych elementów */
+    justify-content: center; /* Równomierne rozmieszczenie podbloków */
+    margin-top: 0;
+    border-top: 0;
+}
+
+Club Coach ExperienceYears::before {
+    color: #525252;
+    content: "lata pracy: ";
+}
+
+Club Coach ExperienceYears::after {
+    color: #525252;
+    content: " lat";
+}

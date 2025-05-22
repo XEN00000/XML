@@ -1,0 +1,209 @@
+<?xml-stylesheet type="text/css" href="report.css"?>
+<Report>
+   <Header>
+      <Title>Raport - Podsumowanie danych piłkarzy i klubów</Title>
+      <DateGenerated>2025-01-08Z</DateGenerated>
+   </Header>
+   <Details>
+      <Club>
+         <Name>Manchester City</Name>
+         <City>Manchester</City>
+         <Summary>
+            <TotalPlayers>5</TotalPlayers>
+            <TotalPlayerValue>635</TotalPlayerValue>
+            <AveragePlayerAge>25</AveragePlayerAge>
+            <HighestGA>0.5</HighestGA>
+         </Summary>
+         <Players>
+            <Player>
+               <Name>Erling Haaland</Name>
+               <Nationality>Norwegia</Nationality>
+               <Age>24</Age>
+               <MarketValue>€200.00m</MarketValue>
+            </Player>
+            <Player>
+               <Name>Phil Foden</Name>
+               <Nationality>Anglia</Nationality>
+               <Age>24</Age>
+               <MarketValue>€150.00m</MarketValue>
+            </Player>
+            <Player>
+               <Name>Rodri</Name>
+               <Nationality>Hiszpania</Nationality>
+               <Age>28</Age>
+               <MarketValue>€130.00m</MarketValue>
+            </Player>
+            <Player>
+               <Name>Rúben Dias</Name>
+               <Nationality>Portugalia</Nationality>
+               <Age>27</Age>
+               <MarketValue>€80.00m</MarketValue>
+            </Player>
+            <Player>
+               <Name>Josko Gvardiol</Name>
+               <Nationality>Chorwacja</Nationality>
+               <Age>22</Age>
+               <MarketValue>€75.00m</MarketValue>
+            </Player>
+         </Players>
+         <Coach>
+            <Name>Pep Guardiola</Name>
+            <ExperienceYears>17</ExperienceYears>
+         </Coach>
+      </Club>
+      <Club>
+         <Name>Arsenal FC</Name>
+         <City>Londyn</City>
+         <Summary>
+            <TotalPlayers>6</TotalPlayers>
+            <TotalPlayerValue>600</TotalPlayerValue>
+            <AveragePlayerAge>25</AveragePlayerAge>
+            <HighestGA>0.6</HighestGA>
+         </Summary>
+         <Players>
+            <Player>
+               <Name>Bukayo Saka</Name>
+               <Nationality>Anglia</Nationality>
+               <Age>23</Age>
+               <MarketValue>€140.00m</MarketValue>
+            </Player>
+            <Player>
+               <Name>Declan Rice</Name>
+               <Nationality>Anglia</Nationality>
+               <Age>25</Age>
+               <MarketValue>€120.00m</MarketValue>
+            </Player>
+            <Player>
+               <Name>Martin Ødegaard</Name>
+               <Nationality>Norwegia</Nationality>
+               <Age>25</Age>
+               <MarketValue>€110.00m</MarketValue>
+            </Player>
+            <Player>
+               <Name>William Saliba</Name>
+               <Nationality>Francja</Nationality>
+               <Age>23</Age>
+               <MarketValue>€80.00m</MarketValue>
+            </Player>
+            <Player>
+               <Name>Gabriel Magalhães</Name>
+               <Nationality>Brazylia</Nationality>
+               <Age>26</Age>
+               <MarketValue>€75.00m</MarketValue>
+            </Player>
+            <Player>
+               <Name>Kai Havertz</Name>
+               <Nationality>Niemcy</Nationality>
+               <Age>25</Age>
+               <MarketValue>€75.00m</MarketValue>
+            </Player>
+         </Players>
+         <Coach>
+            <Name>Mikel Arteta</Name>
+            <ExperienceYears>8</ExperienceYears>
+         </Coach>
+      </Club>
+      <Club>
+         <Name>Chelsea FC</Name>
+         <City>Londyn</City>
+         <Summary>
+            <TotalPlayers>3</TotalPlayers>
+            <TotalPlayerValue>240</TotalPlayerValue>
+            <AveragePlayerAge>23</AveragePlayerAge>
+            <HighestGA>0.4</HighestGA>
+         </Summary>
+         <Players>
+            <Player>
+               <Name>Cole Palmer</Name>
+               <Nationality>Anglia</Nationality>
+               <Age>22</Age>
+               <MarketValue>€90.00m</MarketValue>
+            </Player>
+            <Player>
+               <Name>Enzo Fernández</Name>
+               <Nationality>Argentyna</Nationality>
+               <Age>23</Age>
+               <MarketValue>€75.00m</MarketValue>
+            </Player>
+            <Player>
+               <Name>Moisés Caicedo</Name>
+               <Nationality>Ekwador</Nationality>
+               <Age>23</Age>
+               <MarketValue>€75.00m</MarketValue>
+            </Player>
+         </Players>
+         <Coach>
+            <Name>Enzo Maresca</Name>
+            <ExperienceYears>2</ExperienceYears>
+         </Coach>
+      </Club>
+      <Club>
+         <Name>Newcastle United</Name>
+         <City>Newcastle</City>
+         <Summary>
+            <TotalPlayers>2</TotalPlayers>
+            <TotalPlayerValue>160</TotalPlayerValue>
+            <AveragePlayerAge>26</AveragePlayerAge>
+            <HighestGA>0.4</HighestGA>
+         </Summary>
+         <Players>
+            <Player>
+               <Name>Bruno Guimarães</Name>
+               <Nationality>Brazylia</Nationality>
+               <Age>27</Age>
+               <MarketValue>€85.00m</MarketValue>
+            </Player>
+            <Player>
+               <Name>Alexander Isak</Name>
+               <Nationality>Szwecja</Nationality>
+               <Age>25</Age>
+               <MarketValue>€75.00m</MarketValue>
+            </Player>
+         </Players>
+         <Coach>
+            <Name>Eddie Howe</Name>
+            <ExperienceYears>18</ExperienceYears>
+         </Coach>
+      </Club>
+      <Club>
+         <Name>Liverpool FC</Name>
+         <City>Liverpool</City>
+         <Summary>
+            <TotalPlayers>4</TotalPlayers>
+            <TotalPlayerValue>300</TotalPlayerValue>
+            <AveragePlayerAge>26</AveragePlayerAge>
+            <HighestGA>0.4</HighestGA>
+         </Summary>
+         <Players>
+            <Player>
+               <Name>Luis Díaz</Name>
+               <Nationality>Kolumbia</Nationality>
+               <Age>27</Age>
+               <MarketValue>€80.00m</MarketValue>
+            </Player>
+            <Player>
+               <Name>Alexis Mac Allister</Name>
+               <Nationality>Argentyna</Nationality>
+               <Age>25</Age>
+               <MarketValue>€75.00m</MarketValue>
+            </Player>
+            <Player>
+               <Name>Dominik Szoboszlai</Name>
+               <Nationality>Węgry</Nationality>
+               <Age>24</Age>
+               <MarketValue>€75.00m</MarketValue>
+            </Player>
+            <Player>
+               <Name>Trent Alexander-Arnold</Name>
+               <Nationality>Anglia</Nationality>
+               <Age>26</Age>
+               <MarketValue>€70.00m</MarketValue>
+            </Player>
+         </Players>
+         <Coach>
+            <Name>Arne Slot</Name>
+            <ExperienceYears>7</ExperienceYears>
+         </Coach>
+      </Club>
+   </Details>
+</Report>
